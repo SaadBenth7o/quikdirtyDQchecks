@@ -1,0 +1,107 @@
+2026-06-04 10:15:14  INFO      __main__  ════════════════════════════════════════════════════════════
+2026-06-04 10:15:14  INFO      __main__  Dremio DQ POC  —  starting  (ts=2026-06-04_10-15-14)
+2026-06-04 10:15:14  INFO      __main__  ════════════════════════════════════════════════════════════
+2026-06-04 10:15:15  INFO      __main__  Config loaded: 12 tables, 43 unique queries
+2026-06-04 10:15:15  INFO      __main__  Starting DQ checks…
+2026-06-04 10:15:15  INFO      lib.dremio_client  DremioClient initialised  host=http://dlakegtwprd:9047  auth_type=bearer
+2026-06-04 10:15:15  INFO      lib.dq_runner  Executing 43 unique SQL queries…
+2026-06-04 10:15:15  INFO      lib.dq_runner    Running query_id=8b3b964e7c61
+2026-06-04 10:15:15  INFO      lib.dq_runner    Running query_id=22290a5eee15
+2026-06-04 10:15:18  INFO      lib.dq_runner    Running query_id=cb05f45f09cb
+2026-06-04 10:15:19  INFO      lib.dq_runner    Running query_id=3b07d9d2a1c1
+2026-06-04 10:15:19  INFO      lib.dq_runner    Running query_id=d5be9c68a83a
+2026-06-04 10:15:20  INFO      lib.dq_runner    Running query_id=4eda8649aba1
+2026-06-04 10:15:20  INFO      lib.dq_runner    Running query_id=86f47e3d8063
+2026-06-04 10:15:23  INFO      lib.dq_runner    Running query_id=8e8db6661152
+2026-06-04 10:15:26  INFO      lib.dq_runner    Running query_id=f691094c7cd2
+2026-06-04 10:15:29  INFO      lib.dq_runner    Running query_id=46ddccb241f9
+2026-06-04 10:15:31  INFO      lib.dq_runner    Running query_id=639cc2b91e8a
+2026-06-04 10:15:34  INFO      lib.dq_runner    Running query_id=69aa97d048f6
+2026-06-04 10:15:35  INFO      lib.dq_runner    Running query_id=a671a530e69a
+2026-06-04 10:15:37  INFO      lib.dq_runner    Running query_id=0e89f96df60f
+2026-06-04 10:15:40  INFO      lib.dq_runner    Running query_id=87b0c346a9e8
+2026-06-04 10:15:43  INFO      lib.dq_runner    Running query_id=9ffbbf6e552b
+2026-06-04 10:15:45  INFO      lib.dq_runner    Running query_id=d5dcdbb365e9
+2026-06-04 10:15:48  INFO      lib.dq_runner    Running query_id=d988ca7f64f8
+2026-06-04 10:15:51  INFO      lib.dq_runner    Running query_id=9430c99bcc3f
+2026-06-04 10:15:53  INFO      lib.dq_runner    Running query_id=163935f9fe5c
+2026-06-04 10:15:54  INFO      lib.dq_runner    Running query_id=aa6b7cbe5f83
+2026-06-04 10:15:55  INFO      lib.dq_runner    Running query_id=0f4ee460b27c
+2026-06-04 10:15:55  INFO      lib.dq_runner    Running query_id=7f20313fe62f
+2026-06-04 10:15:58  INFO      lib.dq_runner    Running query_id=6b0e7702df64
+2026-06-04 10:16:00  INFO      lib.dq_runner    Running query_id=ac4bbd288480
+2026-06-04 10:16:03  INFO      lib.dq_runner    Running query_id=11aa97bac464
+2026-06-04 10:16:06  INFO      lib.dq_runner    Running query_id=c4451d7eb19b
+2026-06-04 10:16:08  INFO      lib.dq_runner    Running query_id=8f9cfffd9079
+2026-06-04 10:16:12  INFO      lib.dq_runner    Running query_id=dd31e1d2068e
+2026-06-04 10:16:15  INFO      lib.dq_runner    Running query_id=b9336db01b86
+2026-06-04 10:16:17  INFO      lib.dq_runner    Running query_id=2358b1395eb4
+2026-06-04 10:16:20  INFO      lib.dq_runner    Running query_id=87a146e59e84
+2026-06-04 10:16:23  INFO      lib.dq_runner    Running query_id=1ab2130a6e75
+2026-06-04 10:16:23  INFO      lib.dq_runner    Running query_id=d0c95a45527c
+2026-06-04 10:16:26  INFO      lib.dq_runner    Running query_id=5df17b8df8be
+2026-06-04 10:16:29  INFO      lib.dq_runner    Running query_id=9dcb29f94032
+2026-06-04 10:16:31  INFO      lib.dq_runner    Running query_id=f53a396abb15
+2026-06-04 10:16:34  INFO      lib.dq_runner    Running query_id=3afbd771c0fa
+2026-06-04 10:16:37  INFO      lib.dq_runner    Running query_id=089a8c56d285
+2026-06-04 10:16:39  INFO      lib.dq_runner    Running query_id=ca0d53261a8d
+2026-06-04 10:16:42  INFO      lib.dq_runner    Running query_id=c882b8786f61
+2026-06-04 10:16:45  INFO      lib.dq_runner    Running query_id=d47584835917
+2026-06-04 10:16:47  INFO      lib.dq_runner    Running query_id=6180a33a7d32
+2026-06-04 10:16:50  INFO      lib.dq_runner    Table professional_description                  score=54.3%  flag=FAIL  rows=29488
+2026-06-04 10:16:50  INFO      lib.dq_runner    Table professional_activity                     score=100.0%  flag=PASS  rows=29480
+2026-06-04 10:16:50  INFO      lib.dq_runner    Table natural_person_description                score=91.78%  flag=PASS  rows=4603941
+2026-06-04 10:16:50  INFO      lib.dq_runner    Table legal_entity_financial_data               score=92.15%  flag=PASS  rows=90180
+2026-06-04 10:16:50  INFO      lib.dq_runner    Table legal_entity_description                  score=85.14%  flag=WARN  rows=91078
+2026-06-04 10:16:50  INFO      lib.dq_runner    Table customers                                 score=100.0%  flag=PASS  rows=4724509
+2026-06-04 10:16:50  INFO      lib.dq_runner    Table customer_job                              score=53.06%  flag=FAIL  rows=4549263
+2026-06-04 10:16:50  INFO      lib.dq_runner    Table customer_activity                         score=100.0%  flag=PASS  rows=91670
+2026-06-04 10:16:50  INFO      lib.dq_runner    Table company_shareholders                      score=25.39%  flag=FAIL  rows=97986
+2026-06-04 10:16:50  INFO      lib.dq_runner    Table customer_mail                             score=96.21%  flag=PASS  rows=8160061
+2026-06-04 10:16:50  INFO      lib.dq_runner    Table customer_creation_context                 score=99.17%  flag=PASS  rows=9481731
+2026-06-04 10:16:50  INFO      lib.dq_runner    Table customer_segmentation                     score=98.72%  flag=PASS  rows=78
+2026-06-04 10:16:50  INFO      lib.dq_runner  DQ run complete.  Timestamp: 2026-06-04T10:15:15
+2026-06-04 10:16:50  INFO      __main__  Writing YAML output to: output\2026-06-04_10-15-14
+2026-06-04 10:16:50  INFO      lib.yaml_writer    [table] professional_description → professional_description.yaml
+2026-06-04 10:16:50  INFO      lib.yaml_writer    [table] professional_activity → professional_activity.yaml
+2026-06-04 10:16:50  INFO      lib.yaml_writer    [table] natural_person_description → natural_person_description.yaml
+2026-06-04 10:16:50  INFO      lib.yaml_writer    [table] legal_entity_financial_data → legal_entity_financial_data.yaml
+2026-06-04 10:16:50  INFO      lib.yaml_writer    [table] legal_entity_description → legal_entity_description.yaml
+2026-06-04 10:16:50  INFO      lib.yaml_writer    [table] customers → customers.yaml
+2026-06-04 10:16:50  INFO      lib.yaml_writer    [table] customer_job → customer_job.yaml
+2026-06-04 10:16:50  INFO      lib.yaml_writer    [table] customer_activity → customer_activity.yaml
+2026-06-04 10:16:50  INFO      lib.yaml_writer    [table] company_shareholders → company_shareholders.yaml
+2026-06-04 10:16:50  INFO      lib.yaml_writer    [table] customer_mail → customer_mail.yaml
+2026-06-04 10:16:50  INFO      lib.yaml_writer    [table] customer_creation_context → customer_creation_context.yaml
+2026-06-04 10:16:50  INFO      lib.yaml_writer    [table] customer_segmentation → customer_segmentation.yaml
+2026-06-04 10:16:50  INFO      lib.yaml_writer    [global] → _all_tables.yaml
+2026-06-04 10:16:50  INFO      lib.yaml_writer  All YAML files written to: output\2026-06-04_10-15-14\2026-06-04_10-15-14_yaml  (global_score=83.0%  flag=WARN)
+2026-06-04 10:16:50  INFO      __main__  Writing CSV output to: output\2026-06-04_10-15-14
+2026-06-04 10:16:50  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-04_10-15-14\2026-06-04_10-15-14_csv\professional_description.csv
+2026-06-04 10:16:50  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-04_10-15-14\2026-06-04_10-15-14_csv\professional_activity.csv
+2026-06-04 10:16:50  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-04_10-15-14\2026-06-04_10-15-14_csv\natural_person_description.csv
+2026-06-04 10:16:50  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-04_10-15-14\2026-06-04_10-15-14_csv\legal_entity_financial_data.csv
+2026-06-04 10:16:50  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-04_10-15-14\2026-06-04_10-15-14_csv\legal_entity_description.csv
+2026-06-04 10:16:50  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-04_10-15-14\2026-06-04_10-15-14_csv\customers.csv
+2026-06-04 10:16:50  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-04_10-15-14\2026-06-04_10-15-14_csv\customer_job.csv
+2026-06-04 10:16:50  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-04_10-15-14\2026-06-04_10-15-14_csv\customer_activity.csv
+2026-06-04 10:16:50  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-04_10-15-14\2026-06-04_10-15-14_csv\company_shareholders.csv
+2026-06-04 10:16:50  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-04_10-15-14\2026-06-04_10-15-14_csv\customer_mail.csv
+2026-06-04 10:16:50  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-04_10-15-14\2026-06-04_10-15-14_csv\customer_creation_context.csv
+2026-06-04 10:16:50  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-04_10-15-14\2026-06-04_10-15-14_csv\customer_segmentation.csv
+2026-06-04 10:16:50  INFO      lib.csv_writer  Global summary CSV written: output\2026-06-04_10-15-14\2026-06-04_10-15-14_csv\_all_tables.csv
+2026-06-04 10:16:50  INFO      __main__  Writing CSV output to: output\2026-06-04_10-15-14
+2026-06-04 10:16:50  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-04_10-15-14\2026-06-04_10-15-14_csv\professional_description.csv
+2026-06-04 10:16:50  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-04_10-15-14\2026-06-04_10-15-14_csv\professional_activity.csv
+2026-06-04 10:16:50  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-04_10-15-14\2026-06-04_10-15-14_csv\natural_person_description.csv
+2026-06-04 10:16:50  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-04_10-15-14\2026-06-04_10-15-14_csv\legal_entity_financial_data.csv
+2026-06-04 10:16:50  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-04_10-15-14\2026-06-04_10-15-14_csv\legal_entity_description.csv
+2026-06-04 10:16:50  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-04_10-15-14\2026-06-04_10-15-14_csv\customers.csv
+2026-06-04 10:16:50  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-04_10-15-14\2026-06-04_10-15-14_csv\customer_job.csv
+2026-06-04 10:16:50  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-04_10-15-14\2026-06-04_10-15-14_csv\customer_activity.csv
+2026-06-04 10:16:50  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-04_10-15-14\2026-06-04_10-15-14_csv\company_shareholders.csv
+2026-06-04 10:16:50  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-04_10-15-14\2026-06-04_10-15-14_csv\customer_mail.csv
+2026-06-04 10:16:50  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-04_10-15-14\2026-06-04_10-15-14_csv\customer_creation_context.csv
+2026-06-04 10:16:50  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-04_10-15-14\2026-06-04_10-15-14_csv\customer_segmentation.csv
+2026-06-04 10:16:50  INFO      lib.csv_writer  Global summary CSV written: output\2026-06-04_10-15-14\2026-06-04_10-15-14_csv\_all_tables.csv
+2026-06-04 10:16:50  INFO      __main__  Run complete.

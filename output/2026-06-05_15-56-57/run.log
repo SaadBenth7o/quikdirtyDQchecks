@@ -1,0 +1,343 @@
+2026-06-05 15:56:57  INFO      __main__  ════════════════════════════════════════════════════════════
+2026-06-05 15:56:57  INFO      __main__  Dremio DQ POC  —  starting  (ts=2026-06-05_15-56-57)
+2026-06-05 15:56:57  INFO      __main__  ════════════════════════════════════════════════════════════
+2026-06-05 15:57:11  INFO      __main__  Config loaded: 12 tables, 43 unique queries
+2026-06-05 15:57:12  INFO      __main__  Starting DQ checks…
+2026-06-05 15:57:12  INFO      lib.dremio_client  DremioClient initialised  host=http://dlakegtwprd:9047  auth_type=bearer
+2026-06-05 15:57:13  INFO      lib.dq_runner  Executing 43 unique SQL queries…
+2026-06-05 15:57:13  INFO      lib.dq_runner    Running query_id=8b3b964e7c61
+2026-06-05 15:57:15  INFO      lib.dq_runner    Running query_id=22290a5eee15
+2026-06-05 15:57:18  INFO      lib.dq_runner    Running query_id=cb05f45f09cb
+2026-06-05 15:57:21  INFO      lib.dq_runner    Running query_id=3b07d9d2a1c1
+2026-06-05 15:57:22  INFO      lib.dq_runner    Running query_id=d5be9c68a83a
+2026-06-05 15:57:24  INFO      lib.dq_runner    Running query_id=4eda8649aba1
+2026-06-05 15:57:27  INFO      lib.dq_runner    Running query_id=86f47e3d8063
+2026-06-05 15:57:30  INFO      lib.dq_runner    Running query_id=8e8db6661152
+2026-06-05 15:57:32  INFO      lib.dq_runner    Running query_id=f691094c7cd2
+2026-06-05 15:57:35  INFO      lib.dq_runner    Running query_id=46ddccb241f9
+2026-06-05 15:57:38  INFO      lib.dq_runner    Running query_id=639cc2b91e8a
+2026-06-05 15:57:40  INFO      lib.dq_runner    Running query_id=69aa97d048f6
+2026-06-05 15:57:43  INFO      lib.dq_runner    Running query_id=a671a530e69a
+2026-06-05 15:57:46  INFO      lib.dq_runner    Running query_id=0e89f96df60f
+2026-06-05 15:57:48  INFO      lib.dq_runner    Running query_id=87b0c346a9e8
+2026-06-05 15:57:51  INFO      lib.dq_runner    Running query_id=9ffbbf6e552b
+2026-06-05 15:57:54  INFO      lib.dq_runner    Running query_id=d5dcdbb365e9
+2026-06-05 15:57:57  INFO      lib.dq_runner    Running query_id=d988ca7f64f8
+2026-06-05 15:57:59  INFO      lib.dq_runner    Running query_id=9430c99bcc3f
+2026-06-05 15:58:02  INFO      lib.dq_runner    Running query_id=163935f9fe5c
+2026-06-05 15:58:04  INFO      lib.dq_runner    Running query_id=aa6b7cbe5f83
+2026-06-05 15:58:05  INFO      lib.dq_runner    Running query_id=0f4ee460b27c
+2026-06-05 15:58:08  INFO      lib.dq_runner    Running query_id=7f20313fe62f
+2026-06-05 15:58:21  ERROR     lib.dremio_client  Query execution failed: Job 15dd1bfe-e381-0299-4a3d-1c0363ff5e00 ended with state 'FAILED': SYSTEM ERROR: ChannelClosedException: [FABRIC]: Channel closed /10.23.0.194:46012 <--> /10.23.0.192:39312 (fabric server)
+
+Fragment 1:0
+
+[Error Id: 0ea1d371-5c0d-4859-ad6b-7d6b8d18fa17 on dlakedata03prd.cih.ma:0]
+
+  (com.dremio.exec.rpc.ChannelClosedException) [FABRIC]: Channel closed /10.23.0.194:46012 <--> /10.23.0.192:39312 (fabric server)
+    com.dremio.exec.rpc.RpcBus$ChannelClosedHandler.operationComplete():211
+    com.dremio.exec.rpc.RpcBus$ChannelClosedHandler.operationComplete():199
+    com.dremio.exec.rpc.ReconnectingConnection$CloseHandler.operationComplete():150
+    com.dremio.exec.rpc.ReconnectingConnection$CloseHandler.operationComplete():136
+    com.dremio.services.fabric.FabricConnection$ProxyCloseHandler.operationComplete():153
+    com.dremio.services.fabric.FabricConnection$ProxyCloseHandler.operationComplete():134
+    io.netty.util.concurrent.DefaultPromise.notifyListener0():578
+    io.netty.util.concurrent.DefaultPromise.notifyListenersNow():552
+    io.netty.util.concurrent.DefaultPromise.notifyListeners():491
+    io.netty.util.concurrent.DefaultPromise.setValue0():616
+    io.netty.util.concurrent.DefaultPromise.setSuccess0():605
+    io.netty.util.concurrent.DefaultPromise.trySuccess():104
+    io.netty.channel.DefaultChannelPromise.trySuccess():84
+    io.netty.channel.AbstractChannel$CloseFuture.setClosed():1182
+    io.netty.channel.AbstractChannel$AbstractUnsafe.doClose0():773
+    io.netty.channel.AbstractChannel$AbstractUnsafe.close():749
+    io.netty.channel.AbstractChannel$AbstractUnsafe.handleWriteError():968
+    io.netty.channel.AbstractChannel$AbstractUnsafe.flush0():951
+    io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.forceFlush():361
+    io.netty.channel.nio.NioEventLoop.processSelectedKey():713
+    io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized():655
+    io.netty.channel.nio.NioEventLoop.processSelectedKeys():581
+    io.netty.channel.nio.NioEventLoop.run():493
+    io.netty.util.concurrent.SingleThreadEventExecutor$4.run():986
+    io.netty.util.internal.ThreadExecutorMap$2.run():74
+    java.lang.Thread.run():748
+
+2026-06-05 15:58:21  INFO      lib.dq_runner    Running query_id=6b0e7702df64
+2026-06-05 15:58:45  ERROR     lib.dremio_client  Query execution failed: Job 15dd1bf2-6e2f-9ac7-4b0c-4afadf8b6b00 ended with state 'FAILED': SYSTEM ERROR: RpcException: This daemon doesn't support execution operations.
+
+
+[Error Id: 85b2d625-4d5a-499f-86bc-fa5bae470b4c on dlakedata03prd.cih.ma:-1]
+
+  (com.dremio.exec.rpc.UserRpcException) com.dremio.exec.rpc.RpcException: This daemon doesn't support execution operations.
+    com.dremio.sabot.rpc.CoordExecService.mapToUserRpcException():337
+    com.dremio.sabot.rpc.CoordExecService.access$200():70
+    com.dremio.sabot.rpc.CoordExecService$CoordExecProtocol$1.onError():188
+    com.dremio.exec.service.executor.ExecutorServiceImpl$NoExecutorService.startFragments():146
+    com.dremio.sabot.rpc.CoordExecService$CoordExecProtocol.handle():216
+    com.dremio.services.fabric.FabricMessageHandler.handle():89
+    com.dremio.services.fabric.FabricClient.handle():99
+    com.dremio.services.fabric.FabricClient.handle():44
+    com.dremio.exec.rpc.RpcBus.handle():91
+    com.dremio.exec.rpc.RpcBus$RequestEvent.run():472
+    com.dremio.common.SerializedExecutor$RunnableProcessor.run():96
+    com.dremio.exec.rpc.RpcBus$SameExecutor.execute():338
+    com.dremio.common.SerializedExecutor.execute():129
+    com.dremio.exec.rpc.RpcBus$InboundHandler.decode():372
+    com.dremio.exec.rpc.RpcBus$InboundHandler.decode():343
+    io.netty.handler.codec.MessageToMessageDecoder.channelRead():88
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():379
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():365
+    io.netty.channel.AbstractChannelHandlerContext.fireChannelRead():357
+    io.netty.handler.timeout.IdleStateHandler.channelRead():286
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():379
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():365
+    io.netty.channel.AbstractChannelHandlerContext.fireChannelRead():357
+    io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead():324
+    io.netty.handler.codec.ByteToMessageDecoder.channelRead():296
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():379
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():365
+    io.netty.channel.AbstractChannelHandlerContext.fireChannelRead():357
+    io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead():1410
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():379
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():365
+    io.netty.channel.DefaultChannelPipeline.fireChannelRead():919
+    io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read():166
+    io.netty.channel.nio.NioEventLoop.processSelectedKey():719
+    io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized():655
+    io.netty.channel.nio.NioEventLoop.processSelectedKeys():581
+    io.netty.channel.nio.NioEventLoop.run():493
+    io.netty.util.concurrent.SingleThreadEventExecutor$4.run():986
+    io.netty.util.internal.ThreadExecutorMap$2.run():74
+    java.lang.Thread.run():748
+  Caused By (com.dremio.exec.rpc.RpcException) This daemon doesn't support execution operations.
+    com.dremio.exec.service.executor.ExecutorServiceImpl$NoExecutorService.startFragments():146
+    com.dremio.sabot.rpc.CoordExecService$CoordExecProtocol.handle():216
+    com.dremio.services.fabric.FabricMessageHandler.handle():89
+    com.dremio.services.fabric.FabricClient.handle():99
+    com.dremio.services.fabric.FabricClient.handle():44
+    com.dremio.exec.rpc.RpcBus.handle():91
+    com.dremio.exec.rpc.RpcBus$RequestEvent.run():472
+    com.dremio.common.SerializedExecutor$RunnableProcessor.run():96
+    com.dremio.exec.rpc.RpcBus$SameExecutor.execute():338
+    com.dremio.common.SerializedExecutor.execute():129
+    com.dremio.exec.rpc.RpcBus$InboundHandler.decode():372
+    com.dremio.exec.rpc.RpcBus$InboundHandler.decode():343
+    io.netty.handler.codec.MessageToMessageDecoder.channelRead():88
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():379
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():365
+    io.netty.channel.AbstractChannelHandlerContext.fireChannelRead():357
+    io.netty.handler.timeout.IdleStateHandler.channelRead():286
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():379
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():365
+    io.netty.channel.AbstractChannelHandlerContext.fireChannelRead():357
+    io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead():324
+    io.netty.handler.codec.ByteToMessageDecoder.channelRead():296
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():379
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():365
+    io.netty.channel.AbstractChannelHandlerContext.fireChannelRead():357
+    io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead():1410
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():379
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():365
+    io.netty.channel.DefaultChannelPipeline.fireChannelRead():919
+    io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read():166
+    io.netty.channel.nio.NioEventLoop.processSelectedKey():719
+    io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized():655
+    io.netty.channel.nio.NioEventLoop.processSelectedKeys():581
+    io.netty.channel.nio.NioEventLoop.run():493
+    io.netty.util.concurrent.SingleThreadEventExecutor$4.run():986
+    io.netty.util.internal.ThreadExecutorMap$2.run():74
+    java.lang.Thread.run():748
+
+2026-06-05 15:58:45  INFO      lib.dq_runner    Running query_id=ac4bbd288480
+2026-06-05 15:58:59  INFO      lib.dq_runner    Running query_id=11aa97bac464
+2026-06-05 15:59:06  INFO      lib.dq_runner    Running query_id=c4451d7eb19b
+2026-06-05 15:59:08  INFO      lib.dq_runner    Running query_id=8f9cfffd9079
+2026-06-05 15:59:11  INFO      lib.dq_runner    Running query_id=dd31e1d2068e
+2026-06-05 15:59:13  INFO      lib.dq_runner    Running query_id=b9336db01b86
+2026-06-05 15:59:16  INFO      lib.dq_runner    Running query_id=2358b1395eb4
+2026-06-05 15:59:19  INFO      lib.dq_runner    Running query_id=87a146e59e84
+2026-06-05 15:59:21  INFO      lib.dq_runner    Running query_id=1ab2130a6e75
+2026-06-05 15:59:24  INFO      lib.dq_runner    Running query_id=d0c95a45527c
+2026-06-05 15:59:49  INFO      lib.dq_runner    Running query_id=5df17b8df8be
+2026-06-05 15:59:52  INFO      lib.dq_runner    Running query_id=9dcb29f94032
+2026-06-05 15:59:54  ERROR     lib.dremio_client  Query execution failed: Job 15dd1b97-13c5-5ad1-f3da-b3f7b334fe00 ended with state 'FAILED': Error setting up remote fragment execution
+2026-06-05 15:59:54  INFO      lib.dq_runner    Running query_id=f53a396abb15
+2026-06-05 16:00:25  ERROR     lib.dremio_client  Query execution failed: Job 15dd1b93-a5c5-347b-8acc-841870432800 ended with state 'FAILED': SYSTEM ERROR: ProtocolNotRegisteredException: Protocol not registered with Fabric
+
+
+[Error Id: f71d2cdd-0c6d-41fe-a010-ff4614636109 on :0]
+
+  (com.dremio.exec.rpc.UserRpcException) com.dremio.exec.rpc.RpcException: Protocol not registered with Fabric
+    com.dremio.exec.rpc.RpcBus$RequestEvent.run():476
+    com.dremio.common.SerializedExecutor$RunnableProcessor.run():96
+    com.dremio.exec.rpc.RpcBus$SameExecutor.execute():338
+    com.dremio.common.SerializedExecutor.execute():129
+    com.dremio.exec.rpc.RpcBus$InboundHandler.decode():372
+    com.dremio.exec.rpc.RpcBus$InboundHandler.decode():343
+    io.netty.handler.codec.MessageToMessageDecoder.channelRead():88
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():379
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():365
+    io.netty.channel.AbstractChannelHandlerContext.fireChannelRead():357
+    io.netty.handler.timeout.IdleStateHandler.channelRead():286
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():379
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():365
+    io.netty.channel.AbstractChannelHandlerContext.fireChannelRead():357
+    io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead():324
+    io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead():311
+    io.netty.handler.codec.ByteToMessageDecoder.callDecode():432
+    io.netty.handler.codec.ByteToMessageDecoder.channelRead():276
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():379
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():365
+    io.netty.channel.AbstractChannelHandlerContext.fireChannelRead():357
+    io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead():1410
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():379
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():365
+    io.netty.channel.DefaultChannelPipeline.fireChannelRead():919
+    io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read():166
+    io.netty.channel.nio.NioEventLoop.processSelectedKey():719
+    io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized():655
+    io.netty.channel.nio.NioEventLoop.processSelectedKeys():581
+    io.netty.channel.nio.NioEventLoop.run():493
+    io.netty.util.concurrent.SingleThreadEventExecutor$4.run():986
+    io.netty.util.internal.ThreadExecutorMap$2.run():74
+    java.lang.Thread.run():748
+  Caused By (com.dremio.exec.rpc.RpcException) Protocol not registered with Fabric
+    com.dremio.services.fabric.FabricMessageHandler.handle():61
+    com.dremio.services.fabric.FabricServer.handle():85
+    com.dremio.services.fabric.FabricServer.handle():40
+    com.dremio.exec.rpc.RpcBus.handle():91
+    com.dremio.exec.rpc.RpcBus$RequestEvent.run():472
+    com.dremio.common.SerializedExecutor$RunnableProcessor.run():96
+    com.dremio.exec.rpc.RpcBus$SameExecutor.execute():338
+    com.dremio.common.SerializedExecutor.execute():129
+    com.dremio.exec.rpc.RpcBus$InboundHandler.decode():372
+    com.dremio.exec.rpc.RpcBus$InboundHandler.decode():343
+    io.netty.handler.codec.MessageToMessageDecoder.channelRead():88
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():379
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():365
+    io.netty.channel.AbstractChannelHandlerContext.fireChannelRead():357
+    io.netty.handler.timeout.IdleStateHandler.channelRead():286
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():379
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():365
+    io.netty.channel.AbstractChannelHandlerContext.fireChannelRead():357
+    io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead():324
+    io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead():311
+    io.netty.handler.codec.ByteToMessageDecoder.callDecode():432
+    io.netty.handler.codec.ByteToMessageDecoder.channelRead():276
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():379
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():365
+    io.netty.channel.AbstractChannelHandlerContext.fireChannelRead():357
+    io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead():1410
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():379
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():365
+    io.netty.channel.DefaultChannelPipeline.fireChannelRead():919
+    io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read():166
+    io.netty.channel.nio.NioEventLoop.processSelectedKey():719
+    io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized():655
+    io.netty.channel.nio.NioEventLoop.processSelectedKeys():581
+    io.netty.channel.nio.NioEventLoop.run():493
+    io.netty.util.concurrent.SingleThreadEventExecutor$4.run():986
+    io.netty.util.internal.ThreadExecutorMap$2.run():74
+    java.lang.Thread.run():748
+  Caused By (com.dremio.services.fabric.ProtocolNotRegisteredException) Protocol not registered with Fabric
+    com.dremio.services.fabric.FabricMessageHandler.handle():59
+    com.dremio.services.fabric.FabricServer.handle():85
+    com.dremio.services.fabric.FabricServer.handle():40
+    com.dremio.exec.rpc.RpcBus.handle():91
+    com.dremio.exec.rpc.RpcBus$RequestEvent.run():472
+    com.dremio.common.SerializedExecutor$RunnableProcessor.run():96
+    com.dremio.exec.rpc.RpcBus$SameExecutor.execute():338
+    com.dremio.common.SerializedExecutor.execute():129
+    com.dremio.exec.rpc.RpcBus$InboundHandler.decode():372
+    com.dremio.exec.rpc.RpcBus$InboundHandler.decode():343
+    io.netty.handler.codec.MessageToMessageDecoder.channelRead():88
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():379
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():365
+    io.netty.channel.AbstractChannelHandlerContext.fireChannelRead():357
+    io.netty.handler.timeout.IdleStateHandler.channelRead():286
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():379
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():365
+    io.netty.channel.AbstractChannelHandlerContext.fireChannelRead():357
+    io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead():324
+    io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead():311
+    io.netty.handler.codec.ByteToMessageDecoder.callDecode():432
+    io.netty.handler.codec.ByteToMessageDecoder.channelRead():276
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():379
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():365
+    io.netty.channel.AbstractChannelHandlerContext.fireChannelRead():357
+    io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead():1410
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():379
+    io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead():365
+    io.netty.channel.DefaultChannelPipeline.fireChannelRead():919
+    io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read():166
+    io.netty.channel.nio.NioEventLoop.processSelectedKey():719
+    io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized():655
+    io.netty.channel.nio.NioEventLoop.processSelectedKeys():581
+    io.netty.channel.nio.NioEventLoop.run():493
+    io.netty.util.concurrent.SingleThreadEventExecutor$4.run():986
+    io.netty.util.internal.ThreadExecutorMap$2.run():74
+    java.lang.Thread.run():748
+
+2026-06-05 16:00:25  INFO      lib.dq_runner    Running query_id=3afbd771c0fa
+2026-06-05 16:00:43  INFO      lib.dq_runner    Running query_id=089a8c56d285
+2026-06-05 16:01:01  INFO      lib.dq_runner    Running query_id=ca0d53261a8d
+2026-06-05 16:01:10  INFO      lib.dq_runner    Running query_id=c882b8786f61
+2026-06-05 16:01:12  INFO      lib.dq_runner    Running query_id=d47584835917
+2026-06-05 16:01:15  INFO      lib.dq_runner    Running query_id=6180a33a7d32
+2026-06-05 16:01:18  INFO      lib.dq_runner    Table professional_description                  score=54.3%  flag=FAIL  rows=29497
+2026-06-05 16:01:18  INFO      lib.dq_runner    Table professional_activity                     score=100.0%  flag=PASS  rows=29489
+2026-06-05 16:01:18  INFO      lib.dq_runner    Table natural_person_description                score=91.78%  flag=PASS  rows=4605595
+2026-06-05 16:01:18  INFO      lib.dq_runner    Table legal_entity_financial_data               score=92.15%  flag=PASS  rows=90209
+2026-06-05 16:01:18  INFO      lib.dq_runner    Table legal_entity_description                  score=85.14%  flag=WARN  rows=91109
+2026-06-05 16:01:18  INFO      lib.dq_runner    Table customers                                 score=100.0%  flag=PASS  rows=4605596
+2026-06-05 16:01:18  INFO      lib.dq_runner    Table customer_job                              score=53.06%  flag=FAIL  rows=4550906
+2026-06-05 16:01:18  INFO      lib.dq_runner    Table customer_activity                         score=100.0%  flag=PASS  rows=91701
+2026-06-05 16:01:18  INFO      lib.dq_runner    Table company_shareholders                      score=25.39%  flag=FAIL  rows=98024
+2026-06-05 16:01:18  INFO      lib.dq_runner    Table customer_mail                             score=99.81%  flag=PASS  rows=8161791
+2026-06-05 16:01:18  INFO      lib.dq_runner    Table customer_creation_context                 score=99.16%  flag=PASS  rows=9484393
+2026-06-05 16:01:18  INFO      lib.dq_runner    Table customer_segmentation                     score=98.72%  flag=PASS  rows=78
+2026-06-05 16:01:18  INFO      lib.dq_runner  DQ run complete.  Timestamp: 2026-06-05T15:57:12
+2026-06-05 16:01:18  INFO      __main__  Writing YAML output to: output\2026-06-05_15-56-57
+2026-06-05 16:01:18  INFO      lib.yaml_writer    [table] professional_description → professional_description.yaml
+2026-06-05 16:01:18  INFO      lib.yaml_writer    [table] professional_activity → professional_activity.yaml
+2026-06-05 16:01:18  INFO      lib.yaml_writer    [table] natural_person_description → natural_person_description.yaml
+2026-06-05 16:01:18  INFO      lib.yaml_writer    [table] legal_entity_financial_data → legal_entity_financial_data.yaml
+2026-06-05 16:01:18  INFO      lib.yaml_writer    [table] legal_entity_description → legal_entity_description.yaml
+2026-06-05 16:01:18  INFO      lib.yaml_writer    [table] customers → customers.yaml
+2026-06-05 16:01:18  INFO      lib.yaml_writer    [table] customer_job → customer_job.yaml
+2026-06-05 16:01:18  INFO      lib.yaml_writer    [table] customer_activity → customer_activity.yaml
+2026-06-05 16:01:18  INFO      lib.yaml_writer    [table] company_shareholders → company_shareholders.yaml
+2026-06-05 16:01:18  INFO      lib.yaml_writer    [table] customer_mail → customer_mail.yaml
+2026-06-05 16:01:18  INFO      lib.yaml_writer    [table] customer_creation_context → customer_creation_context.yaml
+2026-06-05 16:01:18  INFO      lib.yaml_writer    [table] customer_segmentation → customer_segmentation.yaml
+2026-06-05 16:01:18  INFO      lib.yaml_writer    [global] → _all_tables.yaml
+2026-06-05 16:01:18  INFO      lib.yaml_writer  All YAML files written to: output\2026-06-05_15-56-57\2026-06-05_15-56-57_yaml  (global_score=83.3%  flag=WARN)
+2026-06-05 16:01:18  INFO      __main__  Writing CSV output to: output\2026-06-05_15-56-57
+2026-06-05 16:01:18  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-05_15-56-57\2026-06-05_15-56-57_csv\professional_description.csv
+2026-06-05 16:01:18  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-05_15-56-57\2026-06-05_15-56-57_csv\professional_activity.csv
+2026-06-05 16:01:18  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-05_15-56-57\2026-06-05_15-56-57_csv\natural_person_description.csv
+2026-06-05 16:01:18  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-05_15-56-57\2026-06-05_15-56-57_csv\legal_entity_financial_data.csv
+2026-06-05 16:01:18  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-05_15-56-57\2026-06-05_15-56-57_csv\legal_entity_description.csv
+2026-06-05 16:01:18  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-05_15-56-57\2026-06-05_15-56-57_csv\customers.csv
+2026-06-05 16:01:18  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-05_15-56-57\2026-06-05_15-56-57_csv\customer_job.csv
+2026-06-05 16:01:18  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-05_15-56-57\2026-06-05_15-56-57_csv\customer_activity.csv
+2026-06-05 16:01:18  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-05_15-56-57\2026-06-05_15-56-57_csv\company_shareholders.csv
+2026-06-05 16:01:18  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-05_15-56-57\2026-06-05_15-56-57_csv\customer_mail.csv
+2026-06-05 16:01:18  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-05_15-56-57\2026-06-05_15-56-57_csv\customer_creation_context.csv
+2026-06-05 16:01:18  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-05_15-56-57\2026-06-05_15-56-57_csv\customer_segmentation.csv
+2026-06-05 16:01:18  INFO      lib.csv_writer  Global summary CSV written: output\2026-06-05_15-56-57\2026-06-05_15-56-57_csv\_all_tables.csv
+2026-06-05 16:01:18  INFO      __main__  Writing CSV output to: output\2026-06-05_15-56-57
+2026-06-05 16:01:18  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-05_15-56-57\2026-06-05_15-56-57_csv\professional_description.csv
+2026-06-05 16:01:18  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-05_15-56-57\2026-06-05_15-56-57_csv\professional_activity.csv
+2026-06-05 16:01:18  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-05_15-56-57\2026-06-05_15-56-57_csv\natural_person_description.csv
+2026-06-05 16:01:18  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-05_15-56-57\2026-06-05_15-56-57_csv\legal_entity_financial_data.csv
+2026-06-05 16:01:18  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-05_15-56-57\2026-06-05_15-56-57_csv\legal_entity_description.csv
+2026-06-05 16:01:18  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-05_15-56-57\2026-06-05_15-56-57_csv\customers.csv
+2026-06-05 16:01:18  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-05_15-56-57\2026-06-05_15-56-57_csv\customer_job.csv
+2026-06-05 16:01:18  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-05_15-56-57\2026-06-05_15-56-57_csv\customer_activity.csv
+2026-06-05 16:01:18  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-05_15-56-57\2026-06-05_15-56-57_csv\company_shareholders.csv
+2026-06-05 16:01:18  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-05_15-56-57\2026-06-05_15-56-57_csv\customer_mail.csv
+2026-06-05 16:01:18  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-05_15-56-57\2026-06-05_15-56-57_csv\customer_creation_context.csv
+2026-06-05 16:01:18  INFO      lib.csv_writer  Per-table CSV written: output\2026-06-05_15-56-57\2026-06-05_15-56-57_csv\customer_segmentation.csv
+2026-06-05 16:01:18  INFO      lib.csv_writer  Global summary CSV written: output\2026-06-05_15-56-57\2026-06-05_15-56-57_csv\_all_tables.csv
+2026-06-05 16:01:18  INFO      __main__  Run complete.
